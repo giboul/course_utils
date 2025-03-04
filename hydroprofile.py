@@ -951,6 +951,8 @@ def app():
         fig = plt.figure(layout="tight")
         ax1 = fig.add_subplot()
         ax2 = fig.add_subplot()
+        ax1.format_coord = lambda x, y: ""
+        ax2.format_coord = lambda x, y: ""
 
     def replot(event=None):
 
